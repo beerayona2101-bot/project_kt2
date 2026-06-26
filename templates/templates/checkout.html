@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Checkout | GULLY MART</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/Users/Home/Desktop/final-gully-mart/static/css/checkout.css">
+
+        <!-- Razorpay (for online payment) -->
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    </head>
+    <body>
+
+        <div class="checkout-header">
+            Checkout
+        </div>
+
+        <div class="checkout-container">
+
+            <!-- LEFT -->
+            <div class="checkout-left">
+                <div class="card">
+                    <h3>Delivery Address</h3>
+                    <input id="name" placeholder="Full Name">
+                    <input id="mobile" placeholder="Mobile Number">
+                    <textarea id="address" placeholder="House No, Street, Area"></textarea>
+                </div>
+
+                <div class="card">
+                    <h3>Payment Method</h3>
+
+                    <label>
+                        <input type="radio" name="payment" value="cod" checked>
+                        Cash on Delivery
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="radio" name="payment" value="online">
+                        UPI / Card / Netbanking
+                    </label>
+                </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="checkout-right">
+                <div class="card">
+                    <h3>Price Details</h3>
+
+                    <div class="price-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal">₹0</span>
+                    </div>
+
+                    <div class="price-row">
+                        <span>Delivery</span>
+                        <span>₹20</span>
+                    </div>
+
+                    <hr>
+
+                    <div class="price-row total">
+                        <span>Total</span>
+                        <span id="total">₹0</span>
+                    </div>
+
+                    <!-- IMPORTANT BUTTON -->
+                    <button onclick="processPayment()" class="place-order-btn">
+                        Place Order
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- JS -->
+        <script src="/Users/Home/Desktop/final-gully-mart/static/js/checkout.js"></script>
+    </body>
+</html>

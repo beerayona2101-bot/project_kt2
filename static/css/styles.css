@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+}
+
+/* ================= TOP NAV ================= */
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 15px;
+    background-image: linear-gradient(to right, #0d6efd, #0a58ca);
+    color: white;
+}
+
+.logo img {
+    height: 44px;
+}
+
+.location small {
+    font-size: 12px;
+    color: #cccccc;
+}
+
+.location strong {
+    font-size: 14px;
+}
+
+.search-bar {
+    display: flex;
+    flex: 1;
+    align-content: center;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.search-bar select,
+.search-bar input {
+    padding: 8px;
+    border: none;
+}
+
+.search-btn {
+    background-color: #1e88e5;
+    border: none;
+    padding: 8px 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.nav-item small {
+    font-size: 12px;
+    color: #cccccc;
+}
+
+.nav-item strong {
+    font-size: 14px;
+}
+
+.cart {
+    height: 40px;
+}
+
+/* ================= BOTTOM NAV ================= */
+.bottom-navbar {
+    position: sticky;
+    background-image: linear-gradient(to left, #0d6efd, #0a58ca);
+    top: 0;
+    z-index: 1000;
+}
+
+/* ================= CAROUSEL ================= */
+.carousel-container {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.carousel-track {
+    display: flex;
+    width: 400%;
+    animation: slide 16s infinite;
+}
+
+.carousel-slide img {
+    width: 100vw;
+    height: 50vh;
+
+
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: #1f2121;
+    color: #dddddd;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+.footer-box h3 {
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    background-color: #0f1111;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes slide {
+    0%, 25% { transform: translateX(0); }
+    30%, 50% { transform: translateX(-100%); }
+    55%, 75% { transform: translateX(-200%); }
+    80%, 100% { transform: translateX(-300%); }
+}

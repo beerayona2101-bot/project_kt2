@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Select Location | GULLY MART</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/Users/Home/Desktop/final-gully-mart/static/css/location.css">
+    </head>
+    <body>
+
+        <div class="overlay">
+            <div class="location-card">
+
+                <h2>Select Your Location</h2>
+
+                <p class="sub-text">
+                    Enter your area to find nearby shops and services
+                </p>
+
+                <input
+                    type="text"
+                    id="locationInput"
+                    class="input"
+                    placeholder="Enter area (Eg: Miyapur)"
+                    oninput="updateLocation()"
+                >
+
+                <!-- MAP PREVIEW -->
+                <iframe
+                    id="mapPreview"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+
+                <!-- NEARBY AREAS -->
+                <div class="shops-section">
+                    <p class="muted">
+                        Nearby Areas
+                    </p>
+
+                    <ul id="shopsList">
+                        <li class="muted">
+                            Start typing to see nearby areas
+                        </li>
+                    </ul>
+                </div>
+
+                <a
+                    href="shops.html"
+                    class="back-link"
+                >
+                     slelct Location
+                </a>
+
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/Users/Home/Desktop/final-gully-mart/static/js/location.js"></script>
+    </body>
+</html>

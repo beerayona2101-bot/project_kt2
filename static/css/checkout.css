@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+.checkout-header {
+    background: #232f3e;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.checkout-container {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+}
+
+.checkout-left {
+    flex: 2;
+}
+
+.checkout-right {
+    flex: 1;
+}
+
+.card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+.payment-option {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* UPI APPS */
+.upi-apps {
+    display: none;
+    margin-top: 10px;
+}
+
+.upi-btn {
+    padding: 10px;
+    background: #e3e6e6;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.upi-btn:hover {
+    background: #30bdf4;
+    color: #ffffff;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.price-row.total {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.place-order-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #ffd814;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .checkout-container {
+        flex-direction: column;
+    }
+}
